@@ -1,4 +1,4 @@
-# Maths_challenges
+# Maths challenges
 
 ## What is this?
 This is a math quiz application built for android using android studio and Kotlin.
