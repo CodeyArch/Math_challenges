@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/muteButton"
+        android:layout_width="163dp"
+        android:layout_height="157dp"
+        android:background="@drawable/unmuted"
+        android:backgroundTint="@color/colorLightGrey"
+        android:contentDescription="@string/mute_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/noSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="772dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/scribble_font"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="633dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="76sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginRight="16sp"
+        android:layout_marginBottom="107sp"
+        android:fontFamily="@font/scribble_font"
+        android:gravity="center"
+        android:text="@string/maths_challenges_title"
+        android:textColor="@color/black"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="606dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:textSize="90sp"
+        android:background="@drawable/spinner_background"
+        android:contentDescription="@string/select_mode"
+        android:popupBackground="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="602dp"
+        android:layout_height="145dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/scribble_font"
+        android:text="@string/play"
+        android:textColor="@color/black"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/highScoreNav"
+        android:layout_width="223dp"
+        android:layout_height="202dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/trophy_button"
+        android:contentDescription="@string/scores"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/trophy_button"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/howtoplay"
+        android:layout_width="wrap_content"
+        android:layout_height="206dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/scribble_font"
+        android:text="@string/how_to_play"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/highScoreNav"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

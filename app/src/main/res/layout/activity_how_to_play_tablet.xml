@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowToPlayActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/howtoplaytitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/scribble_font"
+        android:text="@string/how_to_play"
+        android:textColor="@color/black"
+        android:textSize="96sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="698dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="964dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/scribble_font"
+        android:text="@string/main_menu"
+        android:textColor="@color/black"
+        android:textSize="72sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="689dp"
+        android:layout_height="727dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/scribble_font"
+        android:text="@string/how_to_play_text"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howtoplaytitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

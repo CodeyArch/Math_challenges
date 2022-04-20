@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Math_challenges</string>
+    <string name="maths_challenges_title">Maths Challenges!</string>
+    <string name="select_mode">Select game mode!</string>
+    <string name="play">Play!</string>
+    <string name="scores">scores</string>
+    <string name="how_to_play">How to play?</string>
+    <string name="main_menu">Main menu</string>
+    <string name="how_to_play_text">Test your mental maths with these fun quizzes!\n
+        \nAnswer 10 simple maths questions as fast as you can with 3 game modes to choose from\n
+        \nQuestions will be addition, subtraction, division and multiplication with numbers from 1 to 12\n
+        \nEasy mode has no time limit
+        \nMedium mode gives you 20 seconds
+        \nHard mode only gives you 10 seconds\n
+        \nGood luck and have fun!</string>
+    <string name="level_1">Level 1</string>
+    <string name="answer_here">Answer here!</string>
+    <string name="question_here">Question here:</string>
+    <string name="score">Score: 0</string>
+    <string name="quiz_complete">Completed!</string>
+    <string name="so_how_did_you_do">How did you do?</string>
+    <string name="choice1" tools:ignore="Typos">choice1</string>
+    <string name="choice3">choice3</string>
+    <string name="choice4">choice4</string>
+    <string name="choice2">choice2</string>
+    <string name="easy">Easy</string>
+    <string name="can_you_solve_this">Can you solve this?</string>
+    <string name="time_0">Time: 0</string>
+    <string name="time_remaining_infinity">Time remaining: Infinity</string>
+    <string name="play_again">Play again?</string>
+    <string name="trophy_for_victory">Trophy for victory</string>
+    <string name="medium">medium</string>
+    <string name="hard">hard</string>
+    <string name="highest_scores">Highest scores</string>
+    <string name="mute_button">mute button</string>
+</resources>
