@@ -20,6 +20,7 @@ class Level1Activity : AppCompatActivity() {
     private var totalQuestions: Int = 0
     private var counter: Int = -1
     private lateinit var timer: CountDownTimer
+    private var hasFinished: Boolean = false
 
     @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +46,10 @@ class Level1Activity : AppCompatActivity() {
                 counter++
                 cancel()
                 timerTextView.text = "Times up!"
-                startGameOver()
+                if (!hasFinished) {
+                    startGameOver()
+                }
+
             }
         }.start()
         this.requestedOrientation = SCREEN_ORIENTATION_PORTRAIT
@@ -66,6 +70,7 @@ class Level1Activity : AppCompatActivity() {
             highScoreEasyEditor.putInt("Easy Best time", counter)
             highScoreEasyEditor.apply()
         }
+        hasFinished = true
         val gameOverIntent = Intent(this, GameOverActivity::class.java)
         startActivity(gameOverIntent)
     }

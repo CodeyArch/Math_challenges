@@ -11,23 +11,31 @@
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".HowToPlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode = "singleTop"/>
         <activity android:name=".Level1Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode = "singleTop"/>
         <activity android:name=".Level2Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode = "singleTop"/>
         <activity android:name=".Level3Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode = "singleTop"/>
         <activity android:name=".GameOverActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode = "singleTop"/>
         <activity android:name=".HighscoreActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode = "singleTop"/>
     </application>
 
