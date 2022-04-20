@@ -67,6 +67,11 @@ class GameOverActivity : AppCompatActivity() {
             startActivity(intent)
         }
         playAgain.setOnClickListener {
+            when (prefs.getInt("Last Level", 0)) {
+                1 -> startActivity(Intent(this, Level1Activity::class.java))
+                2 -> startActivity(Intent(this, Level2Activity::class.java))
+                3 -> startActivity(Intent(this, Level3Activity::class.java))
+            }
             this.finish()
         }
     }

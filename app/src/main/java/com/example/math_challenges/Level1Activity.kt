@@ -60,6 +60,7 @@ class Level1Activity : AppCompatActivity() {
         val editor: SharedPreferences.Editor = prefs.edit()
         editor.putInt("Score", score)
         editor.putInt("Time", counter)
+        editor.putInt("Last Level", 1)
         editor.apply()
         val highScoreEasyPrefs = getSharedPreferences("HighScore", Context.MODE_PRIVATE)
         val highScoreEasyEditor: SharedPreferences.Editor = highScoreEasyPrefs.edit()
