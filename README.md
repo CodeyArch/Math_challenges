@@ -1,4 +1,4 @@
-# Math_challenges
+# Maths_challenges
 
 ## What is this?
 This is a math quiz application built for android using android studio and Kotlin.
@@ -10,7 +10,7 @@ doing simple division, addition, subtraction and multiplication.
 ## What is the goal?
 The goal is to get the most amount of questions right in the shortest time possible in order to train your 
 mental arithmetic. If you get a question correct, you are awarded with a point and a delightful ring, if you get a question
-incorrect then you are given a short buzz sound. 
+incorrect then you are given a short buzz sound. When the quiz ends, you are given some confetti to celebrate!
 
 ## What are some features? 
 It features 3 difficulty modes, with each difficulty giving you less and less time to solve the 10 questions. Easy mode has no time limit, medium mode
