@@ -66,7 +66,7 @@ class Level2Activity : AppCompatActivity() {
         val highScoreMediumEditor: SharedPreferences.Editor = highScorePrefs.edit()
         val bestScore = highScorePrefs.getInt("Medium Best score", 0)
         val bestTime = highScorePrefs.getInt("Medium Best time", 0)
-        if (score >= bestScore && bestTime >= counter || bestTime == 0) {
+        if (score > bestScore || score >= bestScore && bestTime >= counter || bestTime == 0) {
             highScoreMediumEditor.putInt("Medium Best score", score)
             highScoreMediumEditor.putInt("Medium Best time", counter)
             highScoreMediumEditor.apply()
